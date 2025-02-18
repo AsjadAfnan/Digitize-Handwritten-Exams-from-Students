@@ -1,28 +1,33 @@
-# Digitize-Handwritten-Exams-from-Students
-Teachers in Germany manually grade handwritten exams, which is time-consuming due to increasing student numbers. The system aims to automate digitization of handwritten text into digital files, reducing grading workload.
+# Digitize Handwritten Exams from Students  
 
-Setup Instructions
+In Germany, teachers manually grade handwritten exams, which is time-consuming due to increasing student numbers. This system automates the digitization of handwritten text into digital files, reducing grading workload.  
 
-Install Requirements
+Features
 
-pip install -r requirements.txt
-python -m spacy download de_core_news_sm
-sudo apt-get install hunspell-de-de  # For German dictionary
-Initialize Database
+User Authentication – Register and log in securely.
+File Upload & Download – Upload handwritten exam scans and download digitized text.
+AI Processing Pipeline – Converts handwriting into digital text.
+Submission Management – Handle multiple exam submissions efficiently.
+This solution streamlines exam grading, making it faster and more efficient for educators.
 
-flask shell
->>> from app import db
->>> db.create_all()
-Run Application
+## Setup Instructions  
 
-python app.py
+### Install Requirements  
+```sh
+pip install -r requirements.txt  
+python -m spacy download de_core_news_sm  
+sudo apt-get install hunspell-de-de  # For German dictionary  
+flask shell  
+from app import db  
+db.create_all()  
+python app.py  
 Access via Browser
-http://localhost:5000
+Open http://localhost:5000 in your browser.
 
-This complete solution includes user authentication, file upload/download functionality, and the full AI processing pipeline. Teachers can:
+Features
 
-Register and login
-Upload handwritten exam scans
-View processing results
-Download digitized text files
-Manage multiple submissions
+User Authentication – Register and log in securely.
+File Upload & Download – Upload handwritten exam scans and download digitized text.
+AI Processing Pipeline – Converts handwriting into digital text.
+Submission Management – Handle multiple exam submissions efficiently.
+This solution streamlines exam grading, making it faster and more efficient for educators.
