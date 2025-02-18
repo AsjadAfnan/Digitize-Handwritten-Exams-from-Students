@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+    <h1>Processing Results</h1>
+    <h2>Original Text</h2>
+    <pre>{{ original }}</pre>
+    <h2>Corrected Text</h2>
+    <pre>{{ corrected }}</pre>
+    <a href="{{ url_for('download', filename=filename) }}">Download Digitized File</a>
+    <a href="{{ url_for('home') }}">Upload Another</a>
+{% endblock %}
