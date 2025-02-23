@@ -2,6 +2,8 @@
 
 In Germany, teachers manually grade handwritten exams, which is time-consuming due to increasing student numbers. This system automates the digitization of handwritten text into digital files, reducing grading workload.  
 
+There’s a better solution available with paid options like Google Vision API (although the free tier can be used). We’ve chosen a local open-source solution instead.
+
 Features
 
 User Authentication – Register and log in securely.
